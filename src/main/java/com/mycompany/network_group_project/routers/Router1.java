@@ -33,7 +33,7 @@ public class Router1 {
             e.printStackTrace();
         }
         try {
-            socket = new Socket(InetAddress.getByName("localhsot :"), port2);
+            socket = new Socket(InetAddress.getByName("localhost :"), port2);
 
 
             DataOutputStream dataOutputStream = new DataOutputStream(socket.getOutputStream());
@@ -63,7 +63,7 @@ public class Router1 {
             e.printStackTrace();
         }
         try {
-            socket = new Socket(InetAddress.getByName("localhsot"), port3);
+            socket = new Socket(InetAddress.getByName("localhost"), port3);
 
 
             DataOutputStream dataOutputStream = new DataOutputStream(socket.getOutputStream());
