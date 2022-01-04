@@ -18,7 +18,7 @@ public class Server {
             while(!serverSocket.isClosed()){
                 
                 Socket socket = serverSocket.accept();
-                System.out.println("A new client has connected!");
+                System.out.println("Yeni bir client bağlandı !");
                 ClientHandler clientHandler = new ClientHandler(socket);
                 
                 Thread thread = new Thread(clientHandler);
