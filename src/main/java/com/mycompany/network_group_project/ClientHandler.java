@@ -24,7 +24,7 @@ public class ClientHandler implements Runnable {
             this.bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             this.clientUsername = bufferedReader.readLine();
             clientHandlers.add(this);
-            broadcastMessage("SERVER: " + clientUsername + " server'a adım attı !");
+            broadcastMessage("SERVERRR:   " + clientUsername + " server'a adım attı !");
         }catch(IOException e){
             closeEverything(socket, bufferedReader, bufferedWriter);
             
